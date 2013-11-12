@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="reset.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+		html {
+			background-color: #666;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+		a,
+		a:hover,
+		a:visited,
+		a:focus {
+			color: inherit;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		.content {
+			width: 480px;
+			padding: 40px 100px;
+			margin: 80px auto;
+
+			background-color: #eee;
+			border: 1px solid #fff;
+			box-shadow: 0 0 3px #000;
+
+			color: #000;
+		}
+		</style>
+		<script type="text/javascript" src="rude.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				rude.helloUser("Welcome to rude.js world" );
+				rude.dontLeave("Stay here." );
+				rude.kickUsersAss();
+				rude.i_have_an_error();
+			};
+		</script>
+		<title>Rude.js</title>
+	</head>
+	
+	<body>
+		<div class="content">
+			<span style="color: #77f; font-weight: bolder; font-size: 44px;">Rude.js</span><br />
+
+			"Nice trick." --by users.<br />
+			<br />
+			<span style="color: #999;">
+			Copyright (c) 2013 Edward<br />
+			Based on 
+			<a href="http://kilianvalkhof.com/2011/javascript/annoying-js-how-to-be-an-asshole/">Annoying.js</a>
+			 (by <a href="http://kilianvalkhof.com">Kilian Valkhof</a>)<br />
+			Licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a><br />
+			</span>
+		</div>
+	</body>
+</html>
