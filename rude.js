@@ -3,7 +3,7 @@ Rude.js
 
 "Nice trick." --by users.
 
-useage:
+usage:
 rude.helloUser([greating] )				Send our best greating to our users
 rude.noRightClick()						Disable right click so users can not copy
 rude.noDrag()							Disable users dragging photos or text to they can't copy them
