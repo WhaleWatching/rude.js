@@ -35,8 +35,8 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 		if(rude.isSendedGreating )
 			return;
 		if (typeof greating === 'undefined') {
-			alert("I'm sending my greating for you." );
-			alert("I know you are really appreciate for this great message." );
+			alert('I'm sending my greating for you.' );
+			alert('I know you are really appreciate for this great message.' );
 		}
 		else{
 			alert(greating );
@@ -58,13 +58,13 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 	rude.noSelect = function(){
 		//no text selection, in IE, chrome and safari
 		document.onselectstart = function(){
-			if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {return false; }
+			if (event.srcElement.type != 'text' && event.srcElement.type != 'textarea' && event.srcElement.type != 'password') {return false; }
 			else {return true; }
 		}
 		//no text selection, in Firefox
 		document.onmousedown=function(e){
 		  var obj=e.target;
-		  if (obj.tagName.toUpperCase() == "INPUT" || obj.tagName.toUpperCase() == "TEXTAREA" || obj.tagName.toUpperCase() == "PASSWORD") {return true; }
+		  if (obj.tagName.toUpperCase() == 'INPUT' || obj.tagName.toUpperCase() == 'TEXTAREA' || obj.tagName.toUpperCase() == 'PASSWORD') {return true; }
 		  else {return false; }
 		}
 	}
@@ -74,7 +74,7 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 		if (typeof msg === 'undefined' ){
 			if(window.onbeforeunload === null )
 				window.onbeforeunload = function(){
-					return "Are you sure want to leave?";
+					return 'Are you sure want to leave?';
 				}
 			else
 				return;
@@ -96,7 +96,7 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 	/* Show my bugs */
 	rude.showBugs = function(){
 		window.onerror = function(msg ){
-			alert("ERROR!!!\nERROR!!!!\n" + msg );
+			alert('ERROR!!!\nERROR!!!!\n' + msg );
 		}
 	}
 
@@ -111,7 +111,7 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 	/* Open all links in a new window so users stay on the site */
 	rude.stayOnSite = function () {
 	for(var i in (a = document.getElementsByTagName('a')) ) {
-		a[i].href = "javascript:window.open('" + a[i].href + "')";
+		a[i].href = 'javascript:window.open(\'' + a[i].href + '\')';
 		}
 	}
 
