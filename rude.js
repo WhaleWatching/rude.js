@@ -35,7 +35,7 @@ Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.p
 		if(rude.isSendedGreating )
 			return;
 		if (typeof greating === 'undefined') {
-			alert('I'm sending my greating for you.' );
+			alert('I\'m sending my greating for you.' );
 			alert('I know you are really appreciate for this great message.' );
 		}
 		else{
